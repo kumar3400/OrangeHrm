@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Orange]">
+  <listeners>
+    <listener class-name="HRM.Orange.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Orange (failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="HRM.Orange.PageTests.Admin.JobpageTest1">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="AddData"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- HRM.Orange.PageTests.Admin.JobpageTest1 -->
+    </classes>
+  </test> <!-- Orange (failed) -->
+</suite> <!-- Failed suite [Orange] -->
