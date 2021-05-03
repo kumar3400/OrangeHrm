@@ -17,7 +17,7 @@ import junit.framework.Assert;
 
 public class AdminPageTest extends BaseClass {
 
-	private String sheetName = "Sheet1   ";
+	private String sheetName = "Sheet1";
 
 	@Test(dataProvider = "AdminPage")
 	public void AdminTest(String uname, String role, String empname, String status, String user) {

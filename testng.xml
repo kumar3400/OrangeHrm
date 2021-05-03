@@ -7,7 +7,7 @@
   
   <parameter name ="browser" value="chrome" />
     <classes>
-       <!--   <class name="HRM.Orange.PageTests.Admin.AdminPageTest"/>-->
+         <class name="HRM.Orange.PageTests.Admin.AdminPageTest"/>
     <!--  <class name="HRM.Orange.PageTests.Admin.JobpageTest1"/>
       <class name="HRM.Orange.PageObjects.BaseClass"/>
     

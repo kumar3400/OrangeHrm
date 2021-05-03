@@ -9,18 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">102,152</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">129,414</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">HRM.Orange.PageTests.Admin.AssignLeaveTest</td><td><a href="#m0">Assignleave</a></td><td rowspan="1">1619612047026</td><td rowspan="1">85029</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">HRM.Orange.PageTests.Admin.AdminPageTest</td><td><a href="#m0">AdminTest</a></td><td rowspan="2">1619970985956</td><td rowspan="2">7459</td></tr><tr class="failedeven"><td><a href="#m1">AdminTest</a></td></tr><tr class="failedodd"><td rowspan="1">HRM.Orange.PageTests.Admin.AssignLeaveTest</td><td><a href="#m2">Assignleave</a></td><td rowspan="1">1619971012429</td><td rowspan="1">83426</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">HRM.Orange.PageTests.Admin.AssignLeaveTest#Assignleave</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>CAN - Bereavement</td><td>2021-Aug-15</td><td>Bereavement leave</td><td>2021-Oct-20</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;assignleave_txtToDate&quot;}
+<h2>Test</h2><h3 id="m0">HRM.Orange.PageTests.Admin.AdminPageTest#AdminTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Admin</td><td>Admin</td><td>Deep Sarkar</td><td>Enabled</td><td>Admin</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at HRM.Orange.PageObjects.GenericMethods.clickSyndicatesLink(GenericMethods.java:46)
+	at HRM.Orange.PageTests.Admin.AdminPageTest.AdminTest(AdminPageTest.java:38)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">HRM.Orange.PageTests.Admin.AdminPageTest#AdminTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Alice.Duval</td><td>ESS</td><td>Alice Duval</td><td>Enabled</td><td>Alice.Duval</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at HRM.Orange.PageObjects.GenericMethods.clickSyndicatesLink(GenericMethods.java:46)
+	at HRM.Orange.PageTests.Admin.AdminPageTest.AdminTest(AdminPageTest.java:38)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">HRM.Orange.PageTests.Admin.AssignLeaveTest#Assignleave</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>CAN - Bereavement</td><td>2021-Aug-15</td><td>Bereavement leave</td><td>2021-Oct-20</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;assignleave_txtToDate&quot;}
   (Session info: chrome=90.0.4430.93)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;US-5CG94924ZQ&apos;, ip: &apos;192.168.0.172&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
+System info: host: &apos;US-5CG94924ZQ&apos;, ip: &apos;10.6.26.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_172&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sr464\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55486}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7c63699153802fc3daadd10bc615cf24
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\sr464\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65041}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0778c557e55449286562abbc15556b16
 *** Element info: {Using=xpath, value=assignleave_txtToDate}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -34,8 +42,8 @@ Session ID: 7c63699153802fc3daadd10bc615cf24
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at HRM.Orange.PageObjects.Admin.AssignLeave.assgnleave(AssignLeave.java:100)
+	at com.sun.proxy.$Proxy11.clear(Unknown Source)
+	at HRM.Orange.PageObjects.Admin.AssignLeave.assgnleave(AssignLeave.java:98)
 	at HRM.Orange.PageTests.Admin.AssignLeaveTest.Assignleave(AssignLeaveTest.java:38)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

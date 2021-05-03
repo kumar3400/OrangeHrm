@@ -11,6 +11,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- HRM.Orange.PageTests.Admin.AssignLeaveTest -->
+      <class name="HRM.Orange.PageTests.Admin.AdminPageTest">
+        <methods>
+          <include name="AdminTest" invocation-numbers="0 1"/>
+          <include name="setupMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- HRM.Orange.PageTests.Admin.AdminPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
