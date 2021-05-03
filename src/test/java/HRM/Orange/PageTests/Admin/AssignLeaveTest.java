@@ -29,17 +29,17 @@ public class AssignLeaveTest  extends BaseClass{
 	}
 	
 	*/
-	@Test(dataProvider="AssignLeave")
+	@Test(dataProvider="Leave")
 	
-	public void Assignleave(String leavetype, String Date, String Date1 , String comment) throws InterruptedException {
+	public void Assignleave(String leavetype, String Date, String comment) throws InterruptedException {
 		
 		AssignLeave asgn = new AssignLeave();
 		
-		asgn.assgnleave(leavetype, Date, Date1, comment);
+		asgn.assgnleave(leavetype, Date, comment);
 	}
 	
 	
-	@DataProvider(name = "AssignLeave")
+	@DataProvider(name = "Leave")
 	public Object[][] dataProvider(){
 		try {
 			ExcelUtility.setExcelFile(xlFilepath, sheetName);

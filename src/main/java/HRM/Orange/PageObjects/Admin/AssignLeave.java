@@ -77,7 +77,7 @@ public class AssignLeave extends BaseClass {
 	
 	
 	
-	public void assgnleave(String leavetype,String Date,String Date1,String comment ) throws InterruptedException {
+	public void assgnleave(String leavetype,String Date,String comment ) throws InterruptedException {
 		
 	Assignleave.click();
 	
@@ -94,12 +94,12 @@ public class AssignLeave extends BaseClass {
 		GenericMethods.DatePicker(Date);
 		
 	
-		Sleep(2000);
-		ToDate.clear();
-		ToDate.click();
+		//Sleep(2000);
+		//ToDate.clear();
+		//ToDate.click();
 	    
 		
-		GenericMethods.DatePicker(Date1);
+		//GenericMethods.DatePicker(Date1);
 		
 		Sleep(2000);
 		Comment.sendKeys(comment);
