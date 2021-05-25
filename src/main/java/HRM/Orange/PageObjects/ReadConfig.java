@@ -53,5 +53,10 @@ public class ReadConfig {
     	String password = pro.getProperty("password");
     	return password;
     }
-	
+	public String getBroswer() {
+		
+		String browserName = pro.getProperty("browser");
+		return browserName;
+	}
+    
 }

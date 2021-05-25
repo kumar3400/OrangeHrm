@@ -2,6 +2,7 @@ package HRM.Orange.PageObjects;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -47,20 +48,22 @@ public class BaseClass {
 		Thread.sleep(slep);
 	}
 	
-	@Parameters("browser")
+	// (parameter="browser")
 	@BeforeClass
-	public void setupMethod(String br) throws InterruptedException
+	public void setupMethod() throws InterruptedException
 	{
+		 
+		String  browserName =readconfig.getBroswer();
 			
 		logger=Logger.getLogger("HRM");
 		PropertyConfigurator.configure("Log4j.properties");
 		
-		if(br.equals("chrome"))
+		if(browserName.equals("chrome"))
 		{
 		System.setProperty("webdriver.chrome.driver",readconfig.getCromePath());
 		driver = new ChromeDriver();
 		}
-		else if(br.equals("ie"))
+		else if(browserName.equals("ie"))
 		{
 			System.setProperty("webdriver.ie.driver",readconfig.getIEpath());
 			
@@ -107,7 +110,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown()
 	{
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.quit();
 	}
 	public void captureScreen(WebDriver driver, String testname) throws IOException{

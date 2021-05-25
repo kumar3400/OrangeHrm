@@ -10,6 +10,8 @@ import com.jcraft.jsch.Logger;
 
 import HRM.Orange.Utilities.WaitTypes;
 
+
+
 public class GenericMethods extends BaseClass {
 
 	// Get total number of rows present in the table to find expected row.
