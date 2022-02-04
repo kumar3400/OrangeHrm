@@ -3,41 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HRM.Orange.PageTests.MyInfo.PersonalDetailsTest">
-        <methods>
-          <include name="setupMethod"/>
-          <include name="PersonalDetailsPage"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- HRM.Orange.PageTests.MyInfo.PersonalDetailsTest -->
       <class name="HRM.Orange.PageTests.Admin.AdminPageTest">
         <methods>
-          <include name="AdminTest"/>
+          <include name="AdminTest" invocation-numbers="1"/>
           <include name="setupMethod"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- HRM.Orange.PageTests.Admin.AdminPageTest -->
-      <class name="HRM.Orange.PageTests.Admin.AssignLeaveTest">
-        <methods>
-          <include name="Assignleave"/>
-          <include name="setupMethod"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- HRM.Orange.PageTests.Admin.AssignLeaveTest -->
-      <class name="HRM.Orange.PageTests.MyInfo.EmergencyContactsTest">
-        <methods>
-          <include name="EmergencyContactData"/>
-          <include name="setupMethod"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- HRM.Orange.PageTests.MyInfo.EmergencyContactsTest -->
-      <class name="HRM.Orange.PageTests.Admin.JobpageTest1">
-        <methods>
-          <include name="setupMethod"/>
-          <include name="addData"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- HRM.Orange.PageTests.Admin.JobpageTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

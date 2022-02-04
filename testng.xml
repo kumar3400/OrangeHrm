@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test  name="Test">
-  
-  
-  
-  <!-- <parameter name ="browser" value="chrome" /> -->
+<suite name="Suite" parallel="methods" thread-count="2">
+  <test name="Test">
     <classes>
-        <class name="HRM.Orange.PageTests.Admin.AdminPageTest"/>
-     <class name="HRM.Orange.PageTests.Admin.JobpageTest1"/>
+      <class name="HRM.Orange.PageTests.Admin.AssignLeaveTest"/>
+      <class name="HRM.Orange.PageTests.Admin.AdminPageTest"/>
       <class name="HRM.Orange.PageObjects.BaseClass"/>
-    
-      <class name="HRM.Orange.PageTests.MyInfo.PersonalDetailsTest"/>  
-       <class name="HRM.Orange.PageTests.MyInfo.EmergencyContactsTest"/>
-      
-       <class name="HRM.Orange.PageTests.Admin.AssignLeaveTest"/>
+      <class name="HRM.Orange.PageTests.Admin.JobpageTest1"/>
+      <class name="HRM.Orange.PageTests.MyInfo.PersonalDetailsTest"/>
+      <class name="HRM.Orange.PageTests.MyInfo.EmergencyContactsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

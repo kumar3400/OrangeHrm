@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.jcraft.jsch.Logger;
 
 import HRM.Orange.PageObjects.BaseClass;
 import HRM.Orange.PageObjects.MyInfo.PersonalDetails;

@@ -17,13 +17,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/sr464/Downloads/jar_files/guava-30.1.1-jre.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sr464/Downloads/jar_files/guava-gwt-30.1.1-jre.jar"/>
-	<classpathentry kind="src" path="/CAAAuto12.1"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/MingleAutomation/prerequisites/jars/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

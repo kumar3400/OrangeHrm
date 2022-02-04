@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test">
+    <classes>
+      <class name="HRM.Orange.PageTests.Admin.AssignLeaveTest"/>
+      <class name="HRM.Orange.PageTests.Admin.AdminPageTest"/>
+      <class name="HRM.Orange.PageObjects.BaseClass"/>
+      <class name="HRM.Orange.PageTests.Admin.JobpageTest1"/>
+      <class name="HRM.Orange.PageTests.MyInfo.PersonalDetailsTest"/>
+      <class name="HRM.Orange.PageTests.MyInfo.EmergencyContactsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="methods">
     <classes>
       <class name="HRM.Orange.PageTests.Admin.AssignLeaveTest">
         <methods>
           <include name="Assignleave"/>
           <include name="setupMethod"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- HRM.Orange.PageTests.Admin.AssignLeaveTest -->
+      <class name="HRM.Orange.PageTests.Admin.AdminPageTest">
+        <methods>
+          <include name="AdminTest"/>
+          <include name="setupMethod"/>
+        </methods>
+      </class> <!-- HRM.Orange.PageTests.Admin.AdminPageTest -->
+      <class name="HRM.Orange.PageTests.Admin.JobpageTest1">
+        <methods>
+          <include name="addData"/>
+        </methods>
+      </class> <!-- HRM.Orange.PageTests.Admin.JobpageTest1 -->
+      <class name="HRM.Orange.PageTests.MyInfo.EmergencyContactsTest">
+        <methods>
+          <include name="EmergencyContactData"/>
+        </methods>
+      </class> <!-- HRM.Orange.PageTests.MyInfo.EmergencyContactsTest -->
+      <class name="HRM.Orange.PageTests.MyInfo.PersonalDetailsTest">
+        <methods>
+          <include name="PersonalDetailsPage"/>
+        </methods>
+      </class> <!-- HRM.Orange.PageTests.MyInfo.PersonalDetailsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
