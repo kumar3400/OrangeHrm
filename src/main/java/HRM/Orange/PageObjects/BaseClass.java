@@ -20,6 +20,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import HRM.Orange.PageObjects.Admin.AssignLeave;
+import io.github.bonigarcia.wdm.WebDriverManager;
  
 
 
@@ -60,7 +61,9 @@ public class BaseClass {
 		
 		if(browserName.equals("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver",readconfig.getCromePath());
+		//System.setProperty("webdriver.chrome.driver",readconfig.getCromePath());
+			
+			WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		}
 		else if(browserName.equals("ie"))
