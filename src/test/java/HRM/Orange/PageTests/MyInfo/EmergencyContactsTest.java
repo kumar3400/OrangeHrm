@@ -1,13 +1,13 @@
 package HRM.Orange.PageTests.MyInfo;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import HRM.Orange.PageObjects.BaseClass;
 import HRM.Orange.PageObjects.MyInfo.EmergencyContacts;
 import HRM.Orange.Utilities.ExcelUtility;
-import junit.framework.Assert;
-
+ 
 public class EmergencyContactsTest extends BaseClass {
 	
 	private String sheetName = "Sheet1";
